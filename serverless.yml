@@ -1,0 +1,54 @@
+service: StarWarsChallengeAPI
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-west-1
+  environment:
+    NODE_ENV: dev
+
+useDotenv: true
+
+custom:
+  documentation: ${file(serverless.docs.yml):documentation}
+  esbuild:
+    bundle: true
+    minify: true
+  serverless-offline:
+    noPrependStageInUrl: true  
+
+plugins:  
+  - serverless-offline
+  - serverless-esbuild
+  - serverless-dotenv-plugin
+  - serverless-openapi-documentation  
+
+functions:
+  createCharacter:
+    handler: app/handler.createCharacter
+    events:
+      - http:
+          path: createCharacter
+          method: post
+          documentation: ${file(serverless.docs.yml):endpoints.createCharacter}
+  getCharacter:
+    handler: app/handler.getCharacter
+    events:
+      - http:          
+          path: getCharacter/{id}
+          method: get
+          documentation: ${file(serverless.docs.yml):endpoints.getCharacter}
+  getAllCharacters:
+    handler: app/handler.getAllCharacters
+    events:
+      - http:
+          path: getAllCharacters
+          method: get
+          documentation: ${file(serverless.docs.yml):endpoints.getAllCharacters}
+  getSwapiCharacter:
+    handler: app/handler.getSwapiCharacter
+    events:
+      - http:
+          path: getSwapiCharacter/{id}
+          method: get
+          documentation: ${file(serverless.docs.yml):endpoints.getSwapiCharacter}

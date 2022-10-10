@@ -1,0 +1,213 @@
+documentation:
+  version: '1'
+  title: 'SWAPI Challenge - Jorge Rubina'
+  models:
+    - name: "CreateCharacterDocumentResponse"
+      description: "Request Model de creación de personaje"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+          code:
+            type: "number"
+          message:
+            type: "string"
+          data:
+            type: "object"
+            properties:
+              id:
+                type: "string"
+              nombre:
+                type: "string"
+              altura:
+                type: "string"
+              masa:
+                type: "string"
+              color_cabello:
+                type: "string"
+              color_piel:
+                type: "string"
+              color_ojos:
+                type: "string"
+              nacimiento:
+                type: "string"
+              genero:
+                type: "string"
+              mundo_natal:
+                type: "string"
+              peliculas:
+                type: "array"
+                items:
+                  type: "string"
+              especies:
+                type: "array"
+                items:
+                  type: "string"
+              vehiculos:
+                type: "array"
+                items:
+                  type: "string"
+              naves_estelares:
+                type: "array"
+                items:
+                  type: "string"
+              created:
+                type: "string"
+              edited:
+                type: "string"
+              url:
+                type: "string"
+    - name: "CreateCharacterDocumentRequest"
+      description: "Request Model de creación de personaje"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+              nombre:
+                type: "string"
+              altura:
+                type: "string"
+              masa:
+                type: "string"
+              color_cabello:
+                type: "string"
+              color_piel:
+                type: "string"
+              color_ojos:
+                type: "string"
+              nacimiento:
+                type: "string"
+              genero:
+                type: "string"
+              mundo_natal:
+                type: "string"
+              peliculas:
+                type: "array"
+                items:
+                  type: "string"
+              especies:
+                type: "array"
+                items:
+                  type: "string"
+              vehiculos:
+                type: "array"
+                items:
+                  type: "string"
+              naves_estelares:
+                type: "array"
+                items:
+                  type: "string"
+              url:
+                type: "string"
+    - name: "ListCharactersDocumentResponse"
+      description: "Request Model de creación de personaje"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+          code:
+            type: "number"
+          message:
+            type: "string"
+          data:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                id:
+                  type: "string"
+                nombre:
+                  type: "string"
+                altura:
+                  type: "string"
+                masa:
+                  type: "string"
+                color_cabello:
+                  type: "string"
+                color_piel:
+                  type: "string"
+                color_ojos:
+                  type: "string"
+                nacimiento:
+                  type: "string"
+                genero:
+                  type: "string"
+                mundo_natal:
+                  type: "string"
+                peliculas:
+                  type: "array"
+                  items:
+                    type: "string"
+                especies:
+                  type: "array"
+                  items:
+                    type: "string"
+                vehiculos:
+                  type: "array"
+                  items:
+                    type: "string"
+                naves_estelares:
+                  type: "array"
+                  items:
+                    type: "string"
+                created:
+                  type: "string"
+                edited:
+                  type: "string"
+                url:
+                  type: "string"
+
+endpoints:
+  createCharacter:
+    sumary: Crear Personaje
+    description: Crea el personaje a traves del modelo definido
+    requestBody:
+      description: Objeto de creación de personaje
+    requestModel:
+      application/json: CreateCharacterDocumentRequest
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: Objeto de respuesta del personaje creado
+        responseModels:
+          application/json: CreateCharacterDocumentResponse
+  getCharacter:
+    sumary: Obtener personaje
+    description: Obtiene el personaje a traves del id
+    pathParams:
+      - name: id
+        description: Id del personaje creado
+        required: true
+        schema:
+          type: string
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: Objeto de respuesta del personaje obtenido
+        responseModels:
+          application/json: CreateCharacterDocumentResponse
+  getAllCharacters:
+    sumary: Obtener todos los personajes creados
+    description: Obtiene la lista de personajes creados
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: Lista de personajes creados
+        responseModels:
+          application/json: ListCharactersDocumentResponse
+  getSwapiCharacter:
+    sumary: Obtener personaje de SWAPI
+    description: Obtiene el personaje a traves del id de SWAPI
+    pathParams:
+      - name: id
+        description: Id del personaje en SWAPI(1-87)
+        required: true
+        schema:
+          type: string
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: Objeto de respuesta del personaje obtenido
+        responseModels:
+          application/json: CreateCharacterDocumentResponse
+
