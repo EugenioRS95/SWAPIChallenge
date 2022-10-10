@@ -42,3 +42,5 @@ Pueden ser las mismas que las credenciales configuradas inicialmente, siempre y 
 ## Ejecución de test de pruebas
 * Ejecutar ```npm run test``` para ejecutar los test de pruebas.
 
+## Consideraciones
+* Utilizar la salida ```aponapi_correcion.yml``` para la revisión de documentación de endpoint en ```https://editor.swagger.io/``` ya que por motivos de tiempo no se ha corregido el archivo ```serverless.docs.yml```
