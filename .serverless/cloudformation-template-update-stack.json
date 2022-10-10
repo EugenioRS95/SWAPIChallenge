@@ -179,7 +179,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665371673202-2022-10-10T03:14:33.202Z/StarWarsChallengeAPI.zip"
+          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665386312751-2022-10-10T07:18:32.751Z/StarWarsChallengeAPI.zip"
         },
         "Handler": "app/handler.createCharacter",
         "Runtime": "nodejs14.x",
@@ -189,8 +189,8 @@
         "Environment": {
           "Variables": {
             "NODE_ENV": "dev",
-            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DX7GZGKUD",
-            "DYNAMO_SECRET_ACCESS_KEY": "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"
+            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DWWGIF6OF",
+            "DYNAMO_SECRET_ACCESS_KEY": "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"
           }
         },
         "Role": {
@@ -211,7 +211,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665371673202-2022-10-10T03:14:33.202Z/StarWarsChallengeAPI.zip"
+          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665386312751-2022-10-10T07:18:32.751Z/StarWarsChallengeAPI.zip"
         },
         "Handler": "app/handler.getCharacter",
         "Runtime": "nodejs14.x",
@@ -221,8 +221,8 @@
         "Environment": {
           "Variables": {
             "NODE_ENV": "dev",
-            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DX7GZGKUD",
-            "DYNAMO_SECRET_ACCESS_KEY": "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"
+            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DWWGIF6OF",
+            "DYNAMO_SECRET_ACCESS_KEY": "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"
           }
         },
         "Role": {
@@ -243,7 +243,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665371673202-2022-10-10T03:14:33.202Z/StarWarsChallengeAPI.zip"
+          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665386312751-2022-10-10T07:18:32.751Z/StarWarsChallengeAPI.zip"
         },
         "Handler": "app/handler.getAllCharacters",
         "Runtime": "nodejs14.x",
@@ -253,8 +253,8 @@
         "Environment": {
           "Variables": {
             "NODE_ENV": "dev",
-            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DX7GZGKUD",
-            "DYNAMO_SECRET_ACCESS_KEY": "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"
+            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DWWGIF6OF",
+            "DYNAMO_SECRET_ACCESS_KEY": "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"
           }
         },
         "Role": {
@@ -275,7 +275,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665371673202-2022-10-10T03:14:33.202Z/StarWarsChallengeAPI.zip"
+          "S3Key": "serverless/StarWarsChallengeAPI/dev/1665386312751-2022-10-10T07:18:32.751Z/StarWarsChallengeAPI.zip"
         },
         "Handler": "app/handler.getSwapiCharacter",
         "Runtime": "nodejs14.x",
@@ -285,8 +285,8 @@
         "Environment": {
           "Variables": {
             "NODE_ENV": "dev",
-            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DX7GZGKUD",
-            "DYNAMO_SECRET_ACCESS_KEY": "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"
+            "DYNAMO_ACCESS_KEY_ID": "AKIA3W5UZM7DWWGIF6OF",
+            "DYNAMO_SECRET_ACCESS_KEY": "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"
           }
         },
         "Role": {
@@ -300,44 +300,44 @@
         "GetSwapiCharacterLogGroup"
       ]
     },
-    "CreateCharacterLambdaVersionMsZ9yyvw9B5Dh2N3MQZ2Mkbllyyx7IxjCUjbb8fA": {
+    "CreateCharacterLambdaVersionrxrG2q8utpvEuFiBQVFW17KUBATq5d1Ml0e1r0Y": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateCharacterLambdaFunction"
         },
-        "CodeSha256": "UuMJ+mxP/s0W7S1uH3QzqLCrfEs0E+ylHDP4zXX93Hw="
+        "CodeSha256": "SQzjUvEFWc5QrR/0boCfhP+KmB16TbxKfooCY9OiXsI="
       }
     },
-    "GetCharacterLambdaVersionYOAw8jKb83OO7vUB6XONMZUXMpcYxFvg6bvUyb6xE": {
+    "GetCharacterLambdaVersionvlwkWKh70yPorZRXFj5ezzIFw6R5LoUby15vWTD49x4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetCharacterLambdaFunction"
         },
-        "CodeSha256": "UuMJ+mxP/s0W7S1uH3QzqLCrfEs0E+ylHDP4zXX93Hw="
+        "CodeSha256": "SQzjUvEFWc5QrR/0boCfhP+KmB16TbxKfooCY9OiXsI="
       }
     },
-    "GetAllCharactersLambdaVersionDJbCXqujNJ8X21PYpJr4vuyLlrH3grUJiUopP9YLw": {
+    "GetAllCharactersLambdaVersion4HuhIYWvLWwdHjIaEf7BtoPZkIbbBumifuqkR2rIvK4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllCharactersLambdaFunction"
         },
-        "CodeSha256": "UuMJ+mxP/s0W7S1uH3QzqLCrfEs0E+ylHDP4zXX93Hw="
+        "CodeSha256": "SQzjUvEFWc5QrR/0boCfhP+KmB16TbxKfooCY9OiXsI="
       }
     },
-    "GetSwapiCharacterLambdaVersionq13jWBijj78frQBibRQct9NlfNKWCu5rh4PJtv00": {
+    "GetSwapiCharacterLambdaVersionUAxf70Oj3fQDMIIDeuEmsLBCFcrQwOAzgb64ryTmM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetSwapiCharacterLambdaFunction"
         },
-        "CodeSha256": "UuMJ+mxP/s0W7S1uH3QzqLCrfEs0E+ylHDP4zXX93Hw="
+        "CodeSha256": "SQzjUvEFWc5QrR/0boCfhP+KmB16TbxKfooCY9OiXsI="
       }
     },
     "ApiGatewayRestApi": {
@@ -620,7 +620,7 @@
         "GetSwapiCharacterLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1665371671829": {
+    "ApiGatewayDeployment1665386311026": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -796,7 +796,7 @@
     "CreateCharacterLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateCharacterLambdaVersionMsZ9yyvw9B5Dh2N3MQZ2Mkbllyyx7IxjCUjbb8fA"
+        "Ref": "CreateCharacterLambdaVersionrxrG2q8utpvEuFiBQVFW17KUBATq5d1Ml0e1r0Y"
       },
       "Export": {
         "Name": "sls-StarWarsChallengeAPI-dev-CreateCharacterLambdaFunctionQualifiedArn"
@@ -805,7 +805,7 @@
     "GetCharacterLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetCharacterLambdaVersionYOAw8jKb83OO7vUB6XONMZUXMpcYxFvg6bvUyb6xE"
+        "Ref": "GetCharacterLambdaVersionvlwkWKh70yPorZRXFj5ezzIFw6R5LoUby15vWTD49x4"
       },
       "Export": {
         "Name": "sls-StarWarsChallengeAPI-dev-GetCharacterLambdaFunctionQualifiedArn"
@@ -814,7 +814,7 @@
     "GetAllCharactersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllCharactersLambdaVersionDJbCXqujNJ8X21PYpJr4vuyLlrH3grUJiUopP9YLw"
+        "Ref": "GetAllCharactersLambdaVersion4HuhIYWvLWwdHjIaEf7BtoPZkIbbBumifuqkR2rIvK4"
       },
       "Export": {
         "Name": "sls-StarWarsChallengeAPI-dev-GetAllCharactersLambdaFunctionQualifiedArn"
@@ -823,7 +823,7 @@
     "GetSwapiCharacterLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetSwapiCharacterLambdaVersionq13jWBijj78frQBibRQct9NlfNKWCu5rh4PJtv00"
+        "Ref": "GetSwapiCharacterLambdaVersionUAxf70Oj3fQDMIIDeuEmsLBCFcrQwOAzgb64ryTmM"
       },
       "Export": {
         "Name": "sls-StarWarsChallengeAPI-dev-GetSwapiCharacterLambdaFunctionQualifiedArn"
